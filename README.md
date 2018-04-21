@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/jiungene/epostit.svg?branch=master)](https://travis-ci.org/jiungene/epostit)
 # epostit
 
 # 1. nojs & npm 설치
