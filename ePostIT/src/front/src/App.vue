@@ -1,13 +1,32 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
     <router-view/>
+    <v-bottom-nav absolute :value="true" color="transparent">
+      <v-btn flat color="teal" value="ADD" to="/map">
+        <span>ADD</span>
+        <v-icon>add_location</v-icon>
+      </v-btn>
+      <v-btn flat color="teal" value="HOME" to="/second">
+        <span>HOME</span>
+        <v-icon>home</v-icon>
+      </v-btn>
+      <v-btn flat color="teal" value="ACCOUNT" to="/first">
+        <span>ACCOUNT</span>
+        <v-icon>account_box</v-icon>
+      </v-btn>
+    </v-bottom-nav>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'App',
+  methods : {
+    navigate(string) {
+      console.log(string)
+      this.$router.push(string);
+    }
+  }
 }
 </script>
 
