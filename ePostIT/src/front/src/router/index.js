@@ -7,6 +7,7 @@ import map from '@/components/GoogleMap'
 Vue.use(Router)
 
 export default new Router({
+    mode: 'history',
     routes: [{
         path: '/second',
         name: 'HelloWorld',
